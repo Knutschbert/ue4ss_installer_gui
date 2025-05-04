@@ -21,6 +21,9 @@ jobs:
       - name: Install jq
         run: sudo apt-get install jq
 
+      - name: Install PyGithub
+        run: pip3 install PyGithub
+
       - name: Run localization diff script
         run: python .github/scripts/detect_localization_changes.py
         env:
